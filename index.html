@@ -1,34 +1,46 @@
 <!doctype html>
 <html>
-  <head>
-    <link href="/docs/css/main.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Include the AngularJS library -->
-    <script src="/docs/js/shared/angular.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body ng-app="portfolio">
-      
-    <div ng-controller="MainController">
-        <div class="topborder"> 
-            <h1 class="h1">{{ name }}</h1>
-            <table>
-              <tr>
-                <td><i class="fa fa-laptop" style="font-size:20px;color:black;"></i></td>
-                <td>
-                  <h2 class="h2">{{ title }}</h2>
-                </td>
-              </tr>
-            </table>
-            <p class="short-desc"> {{ description }} </p>
-            <p>EXPERIENCE</p>
+
+<head>
+  <link href="docs/css/main.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include the AngularJS library -->
+  <script src="docs/js/shared/angular.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body ng-app="portfolio">
+
+  <div ng-controller="MainController">
+    <div class="content">
+      <div class="topborder">
+        <ul class="sidenav">
+          <li><a class="active" href="#about">About</a></li>
+          <li><a href="#exp">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact me!</a></li>
+        </ul>
+        <div class="content">
+          <h1 class="h1">{{ name }}</h1>
+          <table>
+            <tr>
+              <td><i class="fa fa-laptop" style="font-size:20px;color:black;"></i></td>
+              <td>
+                <h2 class="h2">{{ title }}</h2>
+              </td>
+            </tr>
+          </table>
+          <p class="short-desc"> {{ description }} </p>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Modules -->
-    <script src="/docs/js/app.js"></script>
+  <!-- Modules -->
+  <script src="docs/js/app.js"></script>
 
-    <!-- Controllers -->
-    <script src="/docs/js/controllers/MainController.js"></script>
-  </body>
+  <!-- Controllers -->
+  <script src="docs/js/controllers/MainController.js"></script>
+</body>
+
 </html>
