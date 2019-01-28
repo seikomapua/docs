@@ -1,6 +1,6 @@
 app.controller('MainController', ['$scope', function($scope) {
 
-$scope.name = 'Kenzo, Kazumi, Seiko and Anjo';
+$scope.name = 'Seiko Mapua';
 
 $scope.title = 'Web Developer';
 
