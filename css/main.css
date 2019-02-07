@@ -71,7 +71,7 @@ html, body {
  }
   
  ul.sidenav li a.active {
-   background-color: plum;
+   background-color: blueviolet;
    color: white;
  }
  
